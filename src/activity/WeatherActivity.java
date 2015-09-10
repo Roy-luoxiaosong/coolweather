@@ -146,8 +146,7 @@ public class WeatherActivity extends Activity implements OnClickListener{
 	 * 从SharedPreferences文件中读取存储的天气信息,并显示到界面上。
 	 */
 	private void showWeather() {
-		SharedPreferences prefs = PreferenceManager.
-		getDefaultSharedPreferences(this);
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		cityNameText.setText( prefs.getString("city_name", ""));
 		temp1Text.setText(prefs.getString("temp1", ""));
 		temp2Text.setText(prefs.getString("temp2", ""));
